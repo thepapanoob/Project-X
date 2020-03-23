@@ -233,8 +233,8 @@
     <EasyQuest>
       <Name>Auto Update</Name>
       <QuestId />
-      <QuestType>OverridePulseCSharpCode</QuestType>
-      <QuestClass xsi:type="OverridePulseCSharpCodeEasyQuestClass">
+      <QuestType>FullCSharpCode</QuestType>
+      <QuestClass xsi:type="FullCSharpCodeEasyQuestClass">
         <Code>public sealed class AutoUpdate : QuestClass
 {
     public AutoUpdate() // Don't forget to use good classe name
