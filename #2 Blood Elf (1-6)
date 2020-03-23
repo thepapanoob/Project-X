@@ -1389,7 +1389,9 @@ return true;</Code>
       <WoWClass>None</WoWClass>
     </EasyQuest>
   </EasyQuests>
-  <Script>    public class ProfileRestarter
+  <Script>using System.Drawing;
+
+    public class ProfileRestarter
     {
         private static bool _IsAfk = false;
         private static Vector3 afkPosition = (Vector3)null;
