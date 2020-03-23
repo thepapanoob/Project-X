@@ -1,1 +1,357 @@
-Blood Elf GhostlandsToUndercity
+<?xml version="1.0" encoding="utf-8"?>
+<EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestsSorted>
+    <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
+    <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.Usefuls.MapZoneName == &quot;Ghostlands&quot;" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Moving from  Ghostlands to Undercity Started&quot;)" />
+    <QuestsSorted Action="Pulse" NameClass="UndercityPortal" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Moving from  Eversong to Undercity Done&quot;)" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="LoadProfile" NameClass="Project X\Blood Elf UndercityToOgrimmar" />
+  </QuestsSorted>
+  <NpcQuest />
+  <Npc>
+    <Npc>
+      <Position X="7511.88" Y="-6841.08" Z="83.6655" Type="Flying" />
+      <Entry>16268</Entry>
+      <Name>Eralan</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Vendor</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7555.68" Y="-6857.73" Z="93.58012" Type="Flying" />
+      <Entry>16528</Entry>
+      <Name>Provisioner Vredigar</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7622.97" Y="-6845.61" Z="83.8894" Type="Flying" />
+      <Entry>16187</Entry>
+      <Name>Quartermaster Lymel</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Vendor</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7604.85" Y="-6905.62" Z="93.76223" Type="Flying" />
+      <Entry>17655</Entry>
+      <Name>Blacksmith Frances</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7535.26" Y="-6878.81" Z="111.9156" Type="Flying" />
+      <Entry>18426</Entry>
+      <Name>Terellia</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7552.205" Y="-6889.549" Z="96.02917" Type="Flying" />
+      <Entry>49955</Entry>
+      <Name>Leonic Truehair</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>WarriorTrainer</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7552.26" Y="-6887.38" Z="96.02815" Type="Flying" />
+      <Entry>49954</Entry>
+      <Name>Haris Lightsbreath</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>PaladinTrainer</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7579.02" Y="-6860.12" Z="93.3493" Type="Flying" />
+      <Entry>181883</Entry>
+      <Name>Mailbox</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Mailbox</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7555.5" Y="-7668.76" Z="151.2847" Type="Flying" />
+      <Entry>17656</Entry>
+      <Name>Heron Skygaze</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Vendor</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7561.88" Y="-7663.5" Z="151.2825" Type="Flying" />
+      <Entry>16274</Entry>
+      <Name>Narina</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7552.26" Y="-6887.38" Z="96.02812" Type="Flying" />
+      <Entry>49954</Entry>
+      <Name>Haris Lightsbreath</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>PaladinTrainer</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+  </Npc>
+  <EasyQuests>
+    <EasyQuest>
+      <Name>Auto Update</Name>
+      <QuestId />
+      <QuestType>FullCSharpCode</QuestType>
+      <QuestClass xsi:type="FullCSharpCodeEasyQuestClass">
+        <Code>public sealed class AutoUpdate : QuestClass
+{
+    public AutoUpdate() // Don't forget to use good classe name
+    {
+		Name = "AutoUpdate";
+	
+try
+{
+    string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/Blood%20Elf%20GhostlandsToUndercity";
+    Quester.Bot.QuesterSetting.Load();
+    string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\" + Quester.Bot.QuesterSetting.CurrentSetting.ProfileName;
+
+    var currentFileContent = System.IO.File.ReadAllText(currentFile, System.Text.Encoding.UTF8);
+    var onlineFileContent = new System.Net.WebClient { Encoding = System.Text.Encoding.UTF8 }.DownloadString(onlineFile);
+
+    if (!string.IsNullOrWhiteSpace(currentFileContent) &amp;&amp; !string.IsNullOrWhiteSpace(onlineFileContent))
+    {
+        
+            if (currentFileContent != onlineFileContent) // if new update
+            {
+                robotManager.Helpful.Logging.Write("[Auto Updater] New version found, try to update.", (Logging.LogType)1, Color.Red);
+                System.IO.File.WriteAllText(currentFile, onlineFileContent,
+                System.Text.Encoding.UTF8); // replace user file by online file 
+				robotManager.Helpful.Logging.Write("[Auto Updater] New version Download Completed!", (Logging.LogType)1, Color.Red);
+                new System.Threading.Thread(() =&gt; robotManager.Products.Products.ProductRestart()).Start(); // reload product (profile)
+            }
+            if (currentFileContent == onlineFileContent)
+			{
+                robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.", (Logging.LogType)1, Color.Red);
+			}
+    }
+}
+catch (System.Exception e)
+{
+    robotManager.Helpful.Logging.WriteError("Auto update: " + e);
+}
+
+        Lua.LuaDoString("DungeonFrameWorkLoaded = true");
+    }
+}</Code>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition />
+      <IsCompleteCondition>return Lua.LuaDoString&lt;bool&gt;("return DungeonFrameWorkLoaded");</IsCompleteCondition>
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>false</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+    <EasyQuest>
+      <Name>Undercity Portal</Name>
+      <QuestId />
+      <QuestType>OverridePulseCSharpCode</QuestType>
+      <QuestClass xsi:type="OverridePulseCSharpCodeEasyQuestClass">
+        <Code>wManager.wManagerSetting.CurrentSetting.CloseIfPlayerTeleported = false;
+wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithGameObject(new Vector3(10034.63, -7000.584, 61.67049), 184502);
+Thread.Sleep(5000);
+return true;
+</Code>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition>return Usefuls.ContinentId == 530;</CanCondition>
+      <IsCompleteCondition>return Usefuls.ContinentId == 0;</IsCompleteCondition>
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>true</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>6</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+  </EasyQuests>
+  <Script>using System;
+using robotManager.Helpful;
+using wManager.Wow.Helpers;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Threading;
+using wManager.Plugin;
+ 
+   public class ProfileRestarter
+    {
+        private static bool _IsAfk = false;
+        private static Vector3 afkPosition = (Vector3)null;
+        private static int timer = 0;
+        private static bool _isSubscribed = false;
+        private static void WatchForEvents()
+        {
+            if (!_isSubscribed)
+            {
+                _isSubscribed = true;
+
+                EventsLuaWithArgs.OnEventsLuaWithArgs += (LuaEventsId id, List&lt;string&gt; args) =&gt;
+                {
+                    if (id == wManager.Wow.Enums.LuaEventsId.CHAT_MSG_SYSTEM &amp;&amp; Conditions.ProductIsStartedNotInPause)
+                    {
+
+                        if (args.FirstOrDefault().Contains("You are now AFK"))
+                        {
+                            _IsAfk = true;
+                            timer = 0;
+                            afkPosition = ObjectManager.Me.Position;
+                        }
+                    }
+                };
+            }
+        }
+
+        public static void StartProfileRestarter()
+        {
+
+            Thread ProfileRestarterThread = new Thread(() =&gt;
+            {
+                Logging.Write("[Restarter]: Profile Restarter initialized");
+
+                string profileName = "Project X\\Blood Elf GhostlandsToUndercity.xml";
+                string currentProfileName = wManager.Wow.Helpers.Quest.QuesterCurrentContext.ProfileName;
+
+
+                while ((wManager.Wow.Helpers.Quest.QuesterCurrentContext.ProfileName.Equals(profileName) || !ObjectManager.Me.GetMove) &amp;&amp; Conditions.ProductIsStarted)
+                {
+                    Thread.Sleep(1000);
+                }
+
+                if (!_isSubscribed)
+                {
+                    Thread.Sleep(Usefuls.Latency + 500);
+                    WatchForEvents();
+                }
+
+                while (Conditions.ProductIsStarted || Conditions.ProductInPause)
+                {
+
+                    if (wManager.Wow.Helpers.Quest.QuesterCurrentContext.ProfileName.Equals(profileName))
+                        break;
+
+                    while (_IsAfk &amp;&amp; timer &lt; 600 &amp;&amp; !wManager.Wow.Helpers.Quest.QuesterCurrentContext.ProfileName.Equals(profileName))
+                    {
+                        Thread.Sleep(1000);
+                        timer++;
+                    }
+
+                    if (_IsAfk &amp;&amp; timer &gt;= 600 &amp;&amp; ObjectManager.Me.Position.DistanceTo(afkPosition) &lt; 25)
+                    {
+                        Logging.Write("[Restarter]: Bot seems to have stopped / went AFK for too long. Restart of profile in process...");
+                        wManager.Wow.Helpers.Quest.QuesterCurrentContext.ProfileName = profileName;
+                        robotManager.Products.Products.ProductRestart();
+                        break;
+                    }
+
+                    timer = 0;
+                    _IsAfk = false;
+                    Thread.Sleep(10000);
+                }
+
+                Logging.Write("[Restarter]: Profile Restarter disposed");
+
+            });
+
+            ProfileRestarterThread.Start();
+        }
+    }</Script>
+  <OffMeshConnections>
+    <OffMeshConnection>
+      <Path>
+        <Vector3 X="2066.835" Y="289.1198" Z="97.03132" />
+        <Vector3 X="2069.023" Y="296.8334" Z="97.32385" />
+      </Path>
+      <ContinentId>0</ContinentId>
+      <Type>Unidirectional</Type>
+      <TryToUseEvenIfCanFindPathSuccess>false</TryToUseEvenIfCanFindPathSuccess>
+      <Name>Zeppelin</Name>
+    </OffMeshConnection>
+    <OffMeshConnection>
+      <Path>
+        <Vector3 X="1835.873" Y="-4385.681" Z="135.0616" />
+        <Vector3 X="1843.876" Y="-4394.533" Z="135.233" />
+      </Path>
+      <ContinentId>1</ContinentId>
+      <Type>Unidirectional</Type>
+      <TryToUseEvenIfCanFindPathSuccess>false</TryToUseEvenIfCanFindPathSuccess>
+      <Name>Zeppelin</Name>
+    </OffMeshConnection>
+  </OffMeshConnections>
+  <BlacklistNpc />
+  <BlacklistNpcType />
+  <Blackspots />
+</EasyQuestProfile>
