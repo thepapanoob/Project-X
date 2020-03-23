@@ -2,7 +2,7 @@
 <EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
-    <QuestsSorted Action="MessageBox" NameClass="Hello, At this time, This is unsupported. Please contact Smokie of Wrobot for ETA. (Do not delete this file.)&quot;" />
+    <QuestsSorted Action="MessageBox" NameClass="Hello, At this time, This is unsupported. Please contact Smokie of Wrobot for ETA. (Do not delete this file.)" />
   </QuestsSorted>
   <NpcQuest />
   <Npc />
@@ -77,7 +77,7 @@ catch (System.Exception e)
       <WoWClass>None</WoWClass>
     </EasyQuest>
   </EasyQuests>
-  <Script>using System;
+  <Script>using System;
 using robotManager.Helpful;
 using wManager.Wow.Helpers;
 using System.Drawing;
