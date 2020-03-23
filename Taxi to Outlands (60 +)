@@ -3,6 +3,7 @@
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
     <QuestsSorted Action="MessageBox" NameClass="Hello, At this time, This is unsupported. Please contact Smokie of Wrobot for ETA. (Do not delete this file.)" />
+    <QuestsSorted Action="RunCode" NameClass="Products.ProductStop();" />
   </QuestsSorted>
   <NpcQuest />
   <Npc />
