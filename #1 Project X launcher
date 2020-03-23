@@ -383,7 +383,7 @@ public class Intro
 
             SmokieFrame.text = SmokieFrame:CreateFontString(nil, ""BACKGROUND"", ""GameFontNormal"")
             SmokieFrame.text:SetAllPoints()
-            SmokieFrame.text:SetText(""Project X - Thank you for choosing project X. Please dont forget to show us your support by leaving a like on our post and leaving a review. For all bug reports, please join our discord : https://discord.gg/xQuhs5C "")
+            SmokieFrame.text:SetText(""Project X - Thank you for choosing project X. Please dont forget to show us your support by leaving a like on our post and leaving a review. For all bug reports, please join our discord :  https://discord.gg/xQuhs5C "")
             SmokieFrame.text:SetTextColor(1, 1, 1, 6)
             SmokieFrame:SetPoint(""CENTER"", 0, -200)
             SmokieFrame:SetBackdropBorderColor(0, 0, 0, 0)
