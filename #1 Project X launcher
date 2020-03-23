@@ -92,30 +92,27 @@
 	
 try
 {
-    string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/%231%20Project%20X%20launcher"; // use the Github - raw code
+    string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/%231%20Project%20X%20launcher";
     Quester.Bot.QuesterSetting.Load();
-	string ProfileName = "Project-X/#1 Project X launcher";
     string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\" + Quester.Bot.QuesterSetting.CurrentSetting.ProfileName;
-	
+
     var currentFileContent = System.IO.File.ReadAllText(currentFile, System.Text.Encoding.UTF8);
     var onlineFileContent = new System.Net.WebClient { Encoding = System.Text.Encoding.UTF8 }.DownloadString(onlineFile);
 
     if (!string.IsNullOrWhiteSpace(currentFileContent) &amp;&amp; !string.IsNullOrWhiteSpace(onlineFileContent))
     {
         
-            if (currentFileContent != onlineFileContent) // if new update is avaliable 
+            if (currentFileContent != onlineFileContent) // if new update
             {
-                robotManager.Helpful.Logging.Write("[Auto Updater] New version found, try to update.");
+                robotManager.Helpful.Logging.Write("[Auto Updater] New version found, try to update.", (Logging.LogType)1, Color.Red);
                 System.IO.File.WriteAllText(currentFile, onlineFileContent,
                 System.Text.Encoding.UTF8); // replace user file by online file 
-				robotManager.Helpful.Logging.Write("[Auto Updater] New version Download Completed!");
-				Quester.Bot.QuesterSetting.CurrentSetting.ProfileName = ProfileName;
-				Quester.Bot.QuesterSetting.CurrentSetting.Save();
+				robotManager.Helpful.Logging.Write("[Auto Updater] New version Download Completed!", (Logging.LogType)1, Color.Red);
                 new System.Threading.Thread(() =&gt; robotManager.Products.Products.ProductRestart()).Start(); // reload product (profile)
             }
             if (currentFileContent == onlineFileContent)
 			{
-                robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.");
+                robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.", (Logging.LogType)1, Color.Red);
 			}
     }
 }
