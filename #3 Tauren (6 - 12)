@@ -3,6 +3,7 @@
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
     <QuestsSorted Action="MessageBox" NameClass="Coming soon!" />
+    <QuestsSorted Action="LoadProfile" NameClass="Project X\#1 Project X launcher.xml" />
   </QuestsSorted>
   <NpcQuest />
   <Npc />
