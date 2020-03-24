@@ -96,7 +96,7 @@
                 string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/%231%20Project%20X%20launcher";
             
                 Quester.Bot.QuesterSetting.Load();
-                string profileName = "#1 Project X launcher";
+                string profileName = "#1 Project X launcher.xml";
 
                 string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\Project X\" + profileName;
 
