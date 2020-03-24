@@ -13,45 +13,49 @@
       <QuestType>FullCSharpCode</QuestType>
       <QuestClass xsi:type="FullCSharpCodeEasyQuestClass">
         <Code>public sealed class AutoUpdate : QuestClass
-{
-    public AutoUpdate() // Don't forget to use good classe name
     {
-		Name = "AutoUpdate";
-	
-try
-{
-    string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/Warrior%20Stances";
-    Quester.Bot.QuesterSetting.Load();
-    string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\" + Quester.Bot.QuesterSetting.CurrentSetting.ProfileName;
+        public AutoUpdate() // Don't forget to use good classe name
+        {
+            Name = "AutoUpdate";
 
-    var currentFileContent = System.IO.File.ReadAllText(currentFile, System.Text.Encoding.UTF8);
-    var onlineFileContent = new System.Net.WebClient { Encoding = System.Text.Encoding.UTF8 }.DownloadString(onlineFile);
-
-    if (!string.IsNullOrWhiteSpace(currentFileContent) &amp;&amp; !string.IsNullOrWhiteSpace(onlineFileContent))
-    {
-        
-            if (currentFileContent != onlineFileContent) // if new update
+            try
             {
-                robotManager.Helpful.Logging.Write("[Auto Updater] New version found, try to update.", (Logging.LogType)1, Color.Red);
-                System.IO.File.WriteAllText(currentFile, onlineFileContent,
-                System.Text.Encoding.UTF8); // replace user file by online file 
-				robotManager.Helpful.Logging.Write("[Auto Updater] New version Download Completed!", (Logging.LogType)1, Color.Red);
-                new System.Threading.Thread(() =&gt; robotManager.Products.Products.ProductRestart()).Start(); // reload product (profile)
-            }
-            if (currentFileContent == onlineFileContent)
-			{
-                robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.", (Logging.LogType)1, Color.Red);
-			}
-    }
-}
-catch (System.Exception e)
-{
-    robotManager.Helpful.Logging.WriteError("Auto update: " + e);
-}
 
-        Lua.LuaDoString("DungeonFrameWorkLoaded = true");
-    }
-}</Code>
+                string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/Warrior%20Stances";
+                Quester.Bot.QuesterSetting.Load();
+                string profileName = "Warrior Stances.xml";
+
+                string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\Project X\" + profileName;
+
+
+                var currentFileContent = System.IO.File.ReadAllText(currentFile, System.Text.Encoding.UTF8);
+                var onlineFileContent = new System.Net.WebClient { Encoding = System.Text.Encoding.UTF8 }.DownloadString(onlineFile);
+
+                if (!string.IsNullOrWhiteSpace(currentFileContent) &amp;&amp; !string.IsNullOrWhiteSpace(onlineFileContent))
+                {
+
+                    if (currentFileContent != onlineFileContent) // if new update
+                    {
+                        robotManager.Helpful.Logging.Write("[Auto Updater] New version found, try to update.", (Logging.LogType)1, Color.Red);
+                        System.IO.File.WriteAllText(currentFile, onlineFileContent,
+                        System.Text.Encoding.UTF8); // replace user file by online file 
+                        robotManager.Helpful.Logging.Write("[Auto Updater] New version Download Completed!", (Logging.LogType)1, Color.Red);
+                        new System.Threading.Thread(() =&gt; robotManager.Products.Products.ProductRestart()).Start(); // reload product (profile)
+                    }
+                    if (currentFileContent == onlineFileContent)
+                    {
+                        robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.", (Logging.LogType)1, Color.Red);
+                    }
+                }
+            }
+            catch (System.Exception e)
+            {
+                robotManager.Helpful.Logging.WriteError("Auto update: " + e);
+            }
+
+            Lua.LuaDoString("DungeonFrameWorkLoaded = true");
+        }
+    }</Code>
       </QuestClass>
       <ObjectiveCount1>0</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
