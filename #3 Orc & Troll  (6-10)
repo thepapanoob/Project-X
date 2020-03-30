@@ -3,6 +3,7 @@
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
     <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;" />
     <QuestsSorted Action="PickUp" NameClass="ASolventSpirit" />
     <QuestsSorted Action="PickUp" NameClass="Zalazane" />
     <QuestsSorted Action="PickUp" NameClass="ReporttoOrgnil" />
