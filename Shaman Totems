@@ -17,7 +17,7 @@
     <QuestsSorted Action="PulseAllInOne" NameClass="CallofEarth3" />
     <QuestsSorted Action="RunCode" NameClass="if (Quest.GetQuestCompleted(1521))&#xD;&#xA;{&#xD;&#xA;wManager.wManagerSetting.CurrentSetting.DoNotSellList.Add(&quot;Earth Totem&quot;);&#xD;&#xA;}" />
     <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Tauren Earth Totem Questchain [Complete]&quot;)" />
-    <QuestsSorted Action="LoadProfile" NameClass="Project X\Tauren(1-6).xml" />
+    <QuestsSorted Action="LoadProfile" NameClass="Project X\#1 Project X launcher.xml" />
     <QuestsSorted Action="EndIf" NameClass="" />
     <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Tauren &amp;&amp; ObjectManager.Me.WowClass == WoWClass.Shaman &amp;&amp; !Quest.HasQuest(1519) &amp;&amp; !Quest.GetQuestCompleted(1519)" />
     <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Ops, you do not have Call to Earth Quest [1519]. Do not worry, lets go pick it up.&quot;)" />
@@ -35,7 +35,7 @@
     <QuestsSorted Action="PulseAllInOne" NameClass="CallofEarthOrcTrollPart3" />
     <QuestsSorted Action="RunCode" NameClass="if (Quest.GetQuestCompleted(1518))&#xD;&#xA;{&#xD;&#xA;wManager.wManagerSetting.CurrentSetting.DoNotSellList.Add(&quot;Earth Totem&quot;);&#xD;&#xA;}" />
     <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Orc Or Troll Earth Totem Questchain [Complete]&quot;)" />
-    <QuestsSorted Action="LoadProfile" NameClass="Project X\Project X Luncher.xml" />
+    <QuestsSorted Action="LoadProfile" NameClass="Project X\#1 Project X launcher.xml" />
     <QuestsSorted Action="EndIf" NameClass="" />
     <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc  &amp;&amp; ObjectManager.Me.WowClass == WoWClass.Shaman &amp;&amp; !Quest.HasQuest(1516) &amp;&amp; !Quest.GetQuestCompleted(1516) || ObjectManager.Me.PlayerRace == PlayerFactions.Troll  &amp;&amp; ObjectManager.Me.WowClass == WoWClass.Shaman &amp;&amp; !Quest.HasQuest(1516) &amp;&amp; !Quest.GetQuestCompleted(1516)" />
     <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Ops, you do not have Call to Earth Quest [1519]. Do not worry, lets go pick it up.&quot;)" />
@@ -180,6 +180,7 @@
           <int>2953</int>
         </EntryTarget>
         <IsGrinderNotQuest>false</IsGrinderNotQuest>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>0</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
@@ -285,6 +286,7 @@
           <int>3102</int>
         </EntryTarget>
         <IsGrinderNotQuest>false</IsGrinderNotQuest>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>0</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
