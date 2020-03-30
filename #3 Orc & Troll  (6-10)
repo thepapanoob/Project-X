@@ -2,7 +2,7 @@
 <EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
-	<QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;" />
     <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
     <QuestsSorted Action="PickUp" NameClass="ASolventSpirit" />
     <QuestsSorted Action="PickUp" NameClass="Zalazane" />
@@ -19,9 +19,11 @@
     <QuestsSorted Action="Pulse" NameClass="Zalazane3" />
     <QuestsSorted Action="EndIf" NameClass="" />
     <QuestsSorted Action="Pulse" NameClass="MinshinasSkull" />
+    <QuestsSorted Action="If" NameClass="Quest.HasQuest(786) &amp;&amp; !Quest.GetQuestCompleted(786) &amp;&amp; ObjectManager.Me.Level &lt; 10" />
     <QuestsSorted Action="Pulse" NameClass="ThwartingKolkarAggression" />
     <QuestsSorted Action="Pulse" NameClass="ThwartingKolkarAggression2" />
     <QuestsSorted Action="Pulse" NameClass="ThwartingKolkarAggression3" />
+    <QuestsSorted Action="EndIf" NameClass="" />
     <QuestsSorted Action="TurnIn" NameClass="MinshinasSkull" />
     <QuestsSorted Action="TurnIn" NameClass="Zalazane" />
     <QuestsSorted Action="TurnIn" NameClass="PracticalPrey" />
