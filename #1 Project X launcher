@@ -97,7 +97,6 @@
             
                 Quester.Bot.QuesterSetting.Load();
                 string profileName = "#1 Project X launcher.xml";
-
                 string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\Project X\" + profileName;
 
 
@@ -109,6 +108,7 @@
 
                     if (currentFileContent != onlineFileContent) // if new update
                     {
+			Lua.LuaDoString("DungeonFrameWorkLoaded = false");
                         robotManager.Helpful.Logging.Write("[Auto Updater] New version found, try to update.", (Logging.LogType)1, Color.Red);
                         System.IO.File.WriteAllText(currentFile, onlineFileContent,
                         System.Text.Encoding.UTF8); // replace user file by online file 
@@ -118,15 +118,14 @@
                     if (currentFileContent == onlineFileContent)
                     {
                         robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.", (Logging.LogType)1, Color.Red);
+			Lua.LuaDoString("DungeonFrameWorkLoaded = true");
                     }
                 }
             }
             catch (System.Exception e)
             {
                 robotManager.Helpful.Logging.WriteError("Auto update: " + e);
-            }
-
-            Lua.LuaDoString("DungeonFrameWorkLoaded = true");
+            } 
         }
     }</Code>
       </QuestClass>
