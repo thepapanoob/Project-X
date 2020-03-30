@@ -35,7 +35,7 @@
     <QuestsSorted Action="LoadProfile" NameClass="Project X\#3 Orc Hunter.xml" />
     <QuestsSorted Action="EndIf" NameClass="" />
     <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 10 &amp;&amp; ObjectManager.Me.Level &lt; 12" />
-    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; ObjectManager.Me.Level &lt; 12" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; ObjectManager.Me.Level &lt; 12 || ObjectManager.Me.PlayerRace == PlayerFactions.Troll &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; ObjectManager.Me.Level &lt; 12" />
     <QuestsSorted Action="LoadProfile" NameClass="Project X\#4 Orc (10-12).xml" />
     <QuestsSorted Action="EndIf" NameClass="" />
     <QuestsSorted Action="EndIf" NameClass="" />
