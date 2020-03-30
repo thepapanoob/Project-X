@@ -209,7 +209,7 @@
                         System.IO.File.WriteAllText(currentFile, onlineFileContent,
                         System.Text.Encoding.UTF8); // replace user file by online file 
                         robotManager.Helpful.Logging.Write("[Auto Updater] New version Download Completed!", (Logging.LogType)1, Color.Red);
-                        new System.Threading.Thread(() =&gt; robotManager.Products.Products.ProductRestart()).Start(); // reload product (profile)
+                        new System.Threading.Thread(() =&gt; robotManager.Products.Products.ProductRestart());
                     }
                     if (currentFileContent == onlineFileContent)
                     {
