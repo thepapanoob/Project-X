@@ -3,7 +3,7 @@
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
     <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
-    <QuestsSorted Action="RunCode" NameClass="NpcDB.AcceptOnlyProfileNpc = true;" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;&#xD;&#xA;" />
     <QuestsSorted Action="PickUp" NameClass="ASolventSpirit" />
     <QuestsSorted Action="PickUp" NameClass="Zalazane" />
     <QuestsSorted Action="PickUp" NameClass="ReporttoOrgnil" />
@@ -182,50 +182,49 @@
       <QuestType>FullCSharpCode</QuestType>
       <QuestClass xsi:type="FullCSharpCodeEasyQuestClass">
         <Code>public sealed class AutoUpdate : QuestClass
-{
-    public AutoUpdate() // Don't forget to use good classe name
     {
-        Name = "AutoUpdate";
-
-        try
+        public AutoUpdate() // Don't forget to use good classe name
         {
+            Name = "AutoUpdate";
 
-            string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/%233%20Orc%20%26%20Troll%20%20(6-10)";
-            Quester.Bot.QuesterSetting.Load();
-            string profileName = "#3 Orc &amp; Troll  (6-10).xml";
-
-            string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\Project X\" + profileName;
-
-
-            var currentFileContent = System.IO.File.ReadAllText(currentFile, System.Text.Encoding.UTF8);
-            var onlineFileContent = new System.Net.WebClient { Encoding = System.Text.Encoding.UTF8 }.DownloadString(onlineFile);
-
-            if (!string.IsNullOrWhiteSpace(currentFileContent) &amp;&amp; !string.IsNullOrWhiteSpace(onlineFileContent))
+            try
             {
+                
+                string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/%233%20Orc%20%26%20Troll%20%20(6-10)";
+                Quester.Bot.QuesterSetting.Load();
+                string profileName = "#3 Orc &amp; Troll  (6-10).xml";
 
-                if (currentFileContent != onlineFileContent) // if new update
+                string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\Project X\" + profileName;
+
+
+                var currentFileContent = System.IO.File.ReadAllText(currentFile, System.Text.Encoding.UTF8);
+                var onlineFileContent = new System.Net.WebClient { Encoding = System.Text.Encoding.UTF8 }.DownloadString(onlineFile);
+
+                if (!string.IsNullOrWhiteSpace(currentFileContent) &amp;&amp; !string.IsNullOrWhiteSpace(onlineFileContent))
                 {
-                    robotManager.Helpful.Logging.Write("[Auto Updater] New version found, try to update.", (Logging.LogType)1, Color.Red);
-                    System.IO.File.WriteAllText(currentFile, onlineFileContent,
-                    System.Text.Encoding.UTF8); // replace user file by online file 
-                    robotManager.Helpful.Logging.Write("[Auto Updater] New version Download Completed!", (Logging.LogType)1, Color.Red);
-                    new System.Threading.Thread(() =&gt; robotManager.Products.Products.ProductRestart()).Start(); // reload product (profile)
-                }
-                if (currentFileContent == onlineFileContent)
-                {
-                    robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.", (Logging.LogType)1, Color.Red);
-					
+
+                    if (currentFileContent != onlineFileContent) // if new update
+                    {
+                        robotManager.Helpful.Logging.Write("[Auto Updater] New version found, try to update.", (Logging.LogType)1, Color.Red);
+                        System.IO.File.WriteAllText(currentFile, onlineFileContent,
+                        System.Text.Encoding.UTF8); // replace user file by online file 
+                        robotManager.Helpful.Logging.Write("[Auto Updater] New version Download Completed!", (Logging.LogType)1, Color.Red);
+                        new System.Threading.Thread(() =&gt; robotManager.Products.Products.ProductRestart()).Start(); // reload product (profile)
+                    }
+                    if (currentFileContent == onlineFileContent)
+                    {
+                        robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.", (Logging.LogType)1, Color.Red);
+                    }
                 }
             }
-        }
-        catch (System.Exception e)
-        {
-            robotManager.Helpful.Logging.WriteError("Auto update: " + e);
-        }
+            catch (System.Exception e)
+            {
+                robotManager.Helpful.Logging.WriteError("Auto update: " + e);
+            }
 
-        Lua.LuaDoString("DungeonFrameWorkLoaded = true");
-    }
-}</Code>
+            Lua.LuaDoString("DungeonFrameWorkLoaded = true");
+        }
+    }</Code>
       </QuestClass>
       <ObjectiveCount1>0</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
@@ -775,24 +774,13 @@
     </EasyQuest>
   </EasyQuests>
   <Script>using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Threading;
-using wManager.Events;
-using wManager.Wow.Bot.Tasks;
-using wManager.Wow.Enums;
-using wManager.Wow.Helpers;
-using wManager.Wow.ObjectManager;
-using System.ComponentModel;
-using System.Configuration;
-using System.Net;
-using System.Windows.Forms;
-using robotManager.Products;
-using System.Threading.Tasks;
-using System.Drawing;
 using robotManager.Helpful;
+using wManager.Wow.Helpers;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Threading;
+using wManager.Plugin;
+
 
 public class ProfileRestarter
     {
