@@ -27,8 +27,8 @@
     <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; (!wManager.Wow.Helpers.SpellManager.KnowSpell(6991)) &amp;&amp; (ObjectManager.Me.WowClass == WoWClass.Hunter)" />
     <QuestsSorted Action="LoadProfile" NameClass="Project X\#3 Blood Elf Hunter.xml" />
     <QuestsSorted Action="EndIf" NameClass="" />
-    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 6 &amp;&amp; ObjectManager.Me.Level &lt; 10" />
-    <QuestsSorted Action="LoadProfile" NameClass="Project X\#3 Orc (6-10).xml" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 6 &amp;&amp; ObjectManager.Me.Level &lt; 10 || ObjectManager.Me.PlayerRace == PlayerFactions.Troll &amp;&amp; ObjectManager.Me.Level &gt;= 6 &amp;&amp; ObjectManager.Me.Level &lt; 10" />
+    <QuestsSorted Action="LoadProfile" NameClass="Project X\#3 Orc &amp; Troll  (6-10).xml" />
     <QuestsSorted Action="EndIf" NameClass="" />
     <QuestsSorted Action="EndIf" NameClass="" />
     <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; (!wManager.Wow.Helpers.SpellManager.KnowSpell(1515)) &amp;&amp; (ObjectManager.Me.WowClass == WoWClass.Hunter)" />
