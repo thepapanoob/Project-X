@@ -2,7 +2,7 @@
 <EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
-    <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();&#xD;&#xA;&#xD;&#xA;wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;" />
+    <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
     <QuestsSorted Action="PickUp" NameClass="ASolventSpirit" />
     <QuestsSorted Action="PickUp" NameClass="Zalazane" />
     <QuestsSorted Action="PickUp" NameClass="ReporttoOrgnil" />
