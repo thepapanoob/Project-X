@@ -696,7 +696,7 @@
       <ObjectiveCount5>0</ObjectiveCount5>
       <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
       <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
-      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount3>true</AutoDetectObjectiveCount3>
       <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
       <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
       <CanCondition />
@@ -708,7 +708,7 @@
       <Comment />
       <GossipOptionRewardItem>1</GossipOptionRewardItem>
       <RequiredQuest>0</RequiredQuest>
-      <MaxLevel>100</MaxLevel>
+      <MaxLevel>10</MaxLevel>
       <MinLevel>0</MinLevel>
       <WoWClass>None</WoWClass>
     </EasyQuest>
