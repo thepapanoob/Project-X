@@ -2,7 +2,7 @@
 <EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
-    <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
+    <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();&#xD;&#xA;&#xD;&#xA;wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;" />
     <QuestsSorted Action="PickUp" NameClass="ASolventSpirit" />
     <QuestsSorted Action="PickUp" NameClass="Zalazane" />
     <QuestsSorted Action="PickUp" NameClass="ReporttoOrgnil" />
@@ -274,6 +274,7 @@
           <int>3106</int>
         </EntryTarget>
         <IsGrinderNotQuest>false</IsGrinderNotQuest>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>0</ObjectiveCount1>
       <ObjectiveCount2>8</ObjectiveCount2>
@@ -321,6 +322,7 @@
           <int>3103</int>
         </EntryTarget>
         <IsGrinderNotQuest>false</IsGrinderNotQuest>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>4</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
@@ -358,6 +360,7 @@
         <EntryIdObjects>
           <int>3237</int>
         </EntryIdObjects>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>1</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
@@ -407,6 +410,7 @@
           <int>3207</int>
         </EntryTarget>
         <IsGrinderNotQuest>false</IsGrinderNotQuest>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>4</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
@@ -474,6 +478,7 @@
         <EntryIdObjects>
           <int>3189</int>
         </EntryIdObjects>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>1</ObjectiveCount1>
       <ObjectiveCount2>1</ObjectiveCount2>
@@ -511,6 +516,7 @@
         <EntryIdObjects>
           <int>3190</int>
         </EntryIdObjects>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>0</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
@@ -548,6 +554,7 @@
         <EntryIdObjects>
           <int>3192</int>
         </EntryIdObjects>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>0</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
@@ -588,6 +595,7 @@
           <int>3205</int>
         </EntryTarget>
         <IsGrinderNotQuest>false</IsGrinderNotQuest>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>8</ObjectiveCount1>
       <ObjectiveCount2>8</ObjectiveCount2>
@@ -647,6 +655,7 @@
           <int>3129</int>
         </EntryTarget>
         <IsGrinderNotQuest>true</IsGrinderNotQuest>
+        <IsHotspots>true</IsHotspots>
       </QuestClass>
       <ObjectiveCount1>0</ObjectiveCount1>
       <ObjectiveCount2>0</ObjectiveCount2>
