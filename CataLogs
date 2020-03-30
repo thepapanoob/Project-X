@@ -16,7 +16,12 @@ Version 0.0.3 (03/29/2020)
 -Fixed : Reworked the code.
 -Reporter : SMokie
 
-Blacklist Helper : Zalazane Quest (Orc | Troll) 
-Feet + Area : (-1137.053f, -5571.709f, 9.907743f) - 25f 
-Reason : to help with quest.
+-Blacklist Helper : Zalazane Quest (Orc | Troll) 
+-Feet + Area : (-1137.053f, -5571.709f, 9.907743f) - 25f 
+-Reason : to help with quest.
+
+-Bug : Error using referances (Wrobot code error) {wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;}
+-File : #3 Orc & Troll  (6-10)
+-Fixed : Messing around with it.
+-Reporter : Smokie
 ------------------------------------------------------------------------------------------------------------------------------
