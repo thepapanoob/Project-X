@@ -369,6 +369,7 @@ public class blacklistzone
                 wManager.wManagerSetting.AddBlackListZone(new Vector3(1940.485, -4693.287, 29.72934, "None"), 5.00f, true);
                 wManager.wManagerSetting.AddBlackListZone(new Vector3(1872.12, -4522.215, 26.97758, "None"), 5.00f, true);
 	wManager.wManagerSetting.AddBlackListZone(new Vector3(-628.2213f, -4465.777f, 46.50518f, "None"), 30.00f, true);
+	wManager.wManagerSetting.AddBlackListZone(new Vector3(-1137.053f, -5571.709f, 9.907743f, "None"),25.00f,true);
 	Logging.Write("[Blacklist]: Blacklist Activated.");
                 wManager.wManagerSetting.CurrentSetting.Save();  
         }
