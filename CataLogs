@@ -10,14 +10,17 @@ Version 0.0.2 (03/23/2020)
 Version 0.0.3 (03/29/2020)
 -Bug report : Orc & Troll Launcher code Mising
 -Fixed : Added Prefix (Beta)
+-File : #3 Orc & Troll  (6-10)
 -Reporter : Random
 
 -bug report : Error using referances (Wrobot code error)
 -Fixed : Reworked the code.
+-File : #3 Orc & Troll  (6-10)
 -Reporter : SMokie
 
 -Blacklist Helper : Zalazane Quest (Orc | Troll) 
 -Feet + Area : (-1137.053f, -5571.709f, 9.907743f) - 25f 
+-File : #3 Orc & Troll  (6-10)
 -Reason : to help with quest.
 
 -Bug : Error using referances (Wrobot code error) {wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;}
