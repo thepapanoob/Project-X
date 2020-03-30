@@ -257,7 +257,7 @@ using System.Drawing;
     }
 
     
-public class blacklistzone
+ public class blacklistzone
     {
         public static void List()
         {
