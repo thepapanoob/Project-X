@@ -214,7 +214,7 @@
                 if (currentFileContent == onlineFileContent)
                 {
                     robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.", (Logging.LogType)1, Color.Red);
-					Lua.LuaDoString("DungeonFrameWorkLoaded = true");
+					
                 }
             }
         }
