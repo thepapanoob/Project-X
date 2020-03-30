@@ -2,7 +2,7 @@
 <EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
-    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Shaman Totems&quot;)" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Shaman Totem&quot;)" />
     <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
     <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Tauren &amp;&amp; ObjectManager.Me.WowClass == WoWClass.Shaman &amp;&amp; Quest.HasQuest(1519) ||ObjectManager.Me.PlayerRace == PlayerFactions.Tauren &amp;&amp; ObjectManager.Me.WowClass == WoWClass.Shaman &amp;&amp; Quest.GetQuestCompleted(1519)" />
     <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Tauren Earth Totem Questchain [In Progress]&quot;)" />
@@ -372,13 +372,7 @@
       <WoWClass>None</WoWClass>
     </EasyQuest>
   </EasyQuests>
-  <Script>using System;
-using robotManager.Helpful;
-using wManager.Wow.Helpers;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Threading;
-using wManager.Plugin;
+  <Script>using System.Drawing;
 
 public class ProfileRestarter
     {
