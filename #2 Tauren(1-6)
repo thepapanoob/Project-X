@@ -1236,13 +1236,7 @@
       <WoWClass>None</WoWClass>
     </EasyQuest>
   </EasyQuests>
-  <Script>using System;
-using robotManager.Helpful;
-using wManager.Wow.Helpers;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Threading;
-using wManager.Plugin;
+  <Script>using System.Drawing;
 
 public class ProfileRestarter
     {
