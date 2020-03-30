@@ -362,10 +362,8 @@
         <Code>if (Quest.HasQuest(808) &amp;&amp; !(Quest.IsObjectiveComplete(1, 808)))
 		{
 			wManager.Wow.Bot.Tasks.GoToTask.ToPosition(new Vector3(-1287.492f, -5527.971f, 15.19411f));
-			if (GoToTask.ToPosition(new Vector3(-1287.492f, -5527.971f, 15.19411f)))
-			{
-				wManager.Wow.Helpers.Interact.InteractGameObject(ObjectManager.GetWoWGameObjectByEntry(3237).FirstOrDefault().GetBaseAddress);
-			}
+	wManager.Wow.Helpers.Interact.InteractGameObject(ObjectManager.GetWoWGameObjectByEntry(3237).FirstOrDefault().GetBaseAddress);
+			
 		}
 		return true;</Code>
       </QuestClass>
@@ -780,10 +778,6 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Threading;
 using wManager.Plugin;
-using wManager.Wow.Bot.Tasks;
-using wManager.Wow.Enums;
-using wManager.Wow.Helpers;
-using wManager.Wow.ObjectManager;
 
 
 public class ProfileRestarter
