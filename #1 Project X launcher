@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestsSorted>
-    <QuestsSorted Action="RunCode" NameClass="blacklistzone.List();&#xD;&#xA;&#xD;&#xA;ProfileRestarter.StartProfileRestarter();&#xD;&#xA;&#xD;&#xA;SettingsWow.Settings();&#xD;&#xA;&#xD;&#xA;Intro.SmokieIntro();" />
+    <QuestsSorted Action="RunCode" NameClass="blacklistzone.List();&#xD;&#xA;&#xD;&#xA;ProfileRestarter.StartProfileRestarter();&#xD;&#xA;&#xD;&#xA;Intro.SmokieIntro();" />
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
     <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;=1 &amp;&amp; ObjectManager.Me.Level &lt; 6" />
     <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Tauren &amp;&amp; ObjectManager.Me.Level &gt;= 1 &amp;&amp; ObjectManager.Me.Level &lt; 6" />
