@@ -3,7 +3,7 @@
   <QuestsSorted>
     <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
     <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
-    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;" />
+    <QuestsSorted Action="RunCode" NameClass="NpcDB.AcceptOnlyProfileNpc = true;" />
     <QuestsSorted Action="PickUp" NameClass="ASolventSpirit" />
     <QuestsSorted Action="PickUp" NameClass="Zalazane" />
     <QuestsSorted Action="PickUp" NameClass="ReporttoOrgnil" />
@@ -774,8 +774,7 @@
       <WoWClass>None</WoWClass>
     </EasyQuest>
   </EasyQuests>
-  <Script>using robotManager.Helpful;
-using System;
+  <Script>using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -793,6 +792,7 @@ using System.Windows.Forms;
 using robotManager.Products;
 using System.Threading.Tasks;
 using System.Drawing;
+using robotManager.Helpful;
 
 public class ProfileRestarter
     {
