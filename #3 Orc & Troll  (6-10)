@@ -796,7 +796,7 @@ public class AutoUpdater
         {
             string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/%233%20Orc%20%26%20Troll%20%20(6-10)";    
             Quester.Bot.QuesterSetting.Load();
-            string profileName = "#3 Orc &amp; Troll (6-10).xml";
+            string profileName = "#3 Orc &amp; Troll  (6-10).xml";
 
             string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\Project X\" + profileName;
             var currentFileContent = System.IO.File.ReadAllText(currentFile, System.Text.Encoding.UTF8);
@@ -829,4 +829,4 @@ public class AutoUpdater
   </BlacklistNpc>
   <BlacklistNpcType />
   <Blackspots />
-</EasyQuestProfile>
+</EasyQuestProfile
