@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestsSorted>
-    <QuestsSorted Action="RunCode" NameClass="AutoUpdater.CheckUpdate();&#xD;&#xA;Thread.Sleep(5000);" />
     <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;" />
     <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
     <QuestsSorted Action="PickUp" NameClass="ASolventSpirit" />
@@ -789,43 +788,7 @@ public class ProfileRestarter
             ProfileRestarterThread.Start();
         }
     }
-
-public class AutoUpdater
-{
-    public static void CheckUpdate()
-    {
-        try
-        {
-            string onlineFile = "https://raw.githubusercontent.com/TheSmokie/Project-X/master/%233%20Orc%20%26%20Troll%20%20(6-10)";    
-            Quester.Bot.QuesterSetting.Load();
-            string profileName = "#3 Orc &amp; Troll  (6-10).xml";
-
-            string currentFile = System.Windows.Forms.Application.StartupPath + @"\Profiles\Quester\Project X\" + profileName;
-            var currentFileContent = System.IO.File.ReadAllText(currentFile, System.Text.Encoding.UTF8);
-            var onlineFileContent = new System.Net.WebClient { Encoding = System.Text.Encoding.UTF8 }.DownloadString(onlineFile);
-
-            if (!string.IsNullOrWhiteSpace(currentFileContent) &amp;&amp; !string.IsNullOrWhiteSpace(onlineFileContent))
-            {
-                    if (currentFileContent != onlineFileContent) // if new update
-                    {
-                        robotManager.Helpful.Logging.Write("New version found, try to update file", (Logging.LogType)1, System.Drawing.Color.Red);
-                        System.IO.File.WriteAllText(currentFile, onlineFileContent); // replace user file by online file
-                        new System.Threading.Thread(() =&gt; robotManager.Products.Products.ProductRestart()).Start(); // reload product (profile)
-                         
-                    }
-            }
-
-            if(currentFileContent == onlineFileContent)
-            {
-                robotManager.Helpful.Logging.Write("[Auto Updater]The version on your pc is the latest updated version.", (Logging.LogType)1, System.Drawing.Color.Red);
-            }
-        }
-        catch (System.Exception e)
-        {
-            robotManager.Helpful.Logging.WriteError("Auto update: " + e);
-        }
-    }
-}</Script>
+  </Script>
   <OffMeshConnections />
   <BlacklistNpc>
     <BlackNpc UniqueId="F130000C2E00069D" Name="" />

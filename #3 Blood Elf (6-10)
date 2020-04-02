@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <QuestsSorted>
-    <QuestsSorted Action="Pulse" NameClass="AutoUpdate" />
     <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Blood Elf 6 - 10 Started&quot;)" />
     <QuestsSorted Action="RunCode" NameClass="ProfileRestarter.StartProfileRestarter();" />
     <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Helpers.NpcDB.AcceptOnlyProfileNpc = true;" />
